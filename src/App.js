@@ -6,10 +6,13 @@ function App() {
   mapboxgl.accessToken =
     "pk.eyJ1IjoidGhvbWFzYzk2IiwiYSI6ImNrbnUxOWI0dzA0eWEydnBpZGVyM2FmNXkifQ.E6T6V8OsRj_YsvvjDQV9AA";
 
-  new mapboxgl.Map({
-    container: "byron_the_noob",
-    style: "mapbox://styles/mapbox/streets-v11",
-  });
+  try {
+    new mapboxgl.Map({
+      container: "byron_the_noob",
+      style: "mapbox://styles/mapbox/streets-v11",
+    });
+  } catch {}
+
   return (
     <div className="App">
       <link
