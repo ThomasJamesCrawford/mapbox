@@ -1,17 +1,18 @@
+import { useEffect } from "react";
 import "./App.css";
 
 function App() {
-  var mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
+  useEffect(() => {
+    var mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 
-  mapboxgl.accessToken =
-    "pk.eyJ1IjoidGhvbWFzYzk2IiwiYSI6ImNrbnUxOWI0dzA0eWEydnBpZGVyM2FmNXkifQ.E6T6V8OsRj_YsvvjDQV9AA";
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoidGhvbWFzYzk2IiwiYSI6ImNrbnUxOWI0dzA0eWEydnBpZGVyM2FmNXkifQ.E6T6V8OsRj_YsvvjDQV9AA";
 
-  try {
     new mapboxgl.Map({
       container: "byron_the_noob",
       style: "mapbox://styles/mapbox/streets-v11",
     });
-  } catch {}
+  }, []);
 
   return (
     <div className="App">
