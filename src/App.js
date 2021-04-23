@@ -4,7 +4,8 @@ import "./App.css";
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
  
 mapboxgl.accessToken = 'pk.eyJ1IjoidGhvbWFzYzk2IiwiYSI6ImNrbnUxOWI0dzA0eWEydnBpZGVyM2FmNXkifQ.E6T6V8OsRj_YsvvjDQV9AA';
-var map = new mapboxgl.Map({
+
+new mapboxgl.Map({
 container: 'byron_the_noob',
 style: 'mapbox://styles/mapbox/streets-v11'
 });
