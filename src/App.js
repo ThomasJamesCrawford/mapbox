@@ -1,10 +1,9 @@
 import { useEffect } from "react";
+import mapboxgl from "mapbox-gl";
 import "./App.css";
 
 function App() {
   useEffect(() => {
-    var mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
-
     mapboxgl.accessToken =
       "pk.eyJ1IjoidGhvbWFzYzk2IiwiYSI6ImNrbnUxOWI0dzA0eWEydnBpZGVyM2FmNXkifQ.E6T6V8OsRj_YsvvjDQV9AA";
 
