@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
