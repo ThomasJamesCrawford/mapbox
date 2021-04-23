@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 // eslint-disable-next-line import/no-webpack-loader-syntax
-import mapboxgl from '!mapbox-gl';
+import mapboxgl from "!mapbox-gl";
 import "./App.css";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <p>byron dum</p>
-      <div id="byron_the_noob"></div>
+      <div style={{ height: "1000px" }} id="byron_the_noob"></div>
     </div>
   );
 }
