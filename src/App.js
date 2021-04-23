@@ -16,10 +16,6 @@ function App() {
 
   return (
     <div className="App">
-      <link
-        href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
-        rel="stylesheet"
-      />
       <p>byron dum</p>
       <div id="byron_the_noob"></div>
     </div>
